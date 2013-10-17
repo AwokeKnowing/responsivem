@@ -15,10 +15,7 @@ Now if you size your main div to 1600em by 900em, then your main div will stretc
 
 DEMO
 ======
-check this demo to see a simple example (comming soon)
-=======
-scale smoothly with screen size, keeping proportions
-
+check this demo to see a simple example (coming soon)
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AwokeKnowing/responsivem/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
