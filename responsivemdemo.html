@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="https://rawgithub.com/AwokeKnowing/responsivem/master/responsivem.js" ></script>
+        <script>
+            $(function(){
+                responsivem(640,480)
+                $('#change').click(function(){
+                    responsivem(1000,600);
+                    $('#app-area').width('1000em').height('600em');
+                    $('#pixels').html("There are 1000 x 600 virtual pixels");
+                });   
+            });
+            
+        </script>          
+    </head>
+    <body style="margin:0px;background: grey;font-family: arial">  
+        <div id="app-area" style="background: white;position:relative;height:480em;width:640em;margin:auto;">
+            <div style="text-align: center">
+                <a id="change" style="font-size: 12em" href='#'>Change app space to 1000 x 600 virtual pixels</a>
+            </div>
+            <div style="position:relative;width:500em;height:50em;background:#9999ff;margin: 8em auto auto auto;border-radius:5em">
+                <br><p style="color: #004400;font-size:14em;text-align: center">Resize your browser window to see the effects.</p>
+            </div>
+            <div style="position:relative;width:500em;height:80em;background:#9999ff;margin: 10em auto auto auto">
+                <br><p id="pixels" style="font-size:24em;text-align: center">There are 640 by 480 "virtual pixels"</p>
+            </div>
+            <div id="response-area" style="position:relative;width:500em;height: 250em;margin: 10em auto auto auto">
+                <svg viewBox="0 0 725.09 416.79"><g transform="translate(-68.88156,-326.82503)"><g transform="translate(374.28571,103.00526)"><path style="opacity:0.8;fill:#32bd60;" d="m57.127,223.82c-144.08,0-362.81,91.387-362.53,235.34,111.04-0.87111,87.041,182.78,179.84,181.44h365.41c93.6-0.0171,45.82-180.32,179.84-181.44-0.75-141.3-218.48-235.34-362.56-235.34z"/></g></g></svg>
+            </div>
+            <div style="position:relative;width:240em;height:120em;margin: -195em auto 0em auto;padding:20em;background: #ff6666;opacity:.8;border-radius: 10em;text-align:justify;">
+                <p style="font-size:14em;">It works by modifying the "font-size" attribute on the body, so you need to put any text inside it's own tag(like a p tag) in order to set the font size in em without affecting the font-size of the container</p>
+            </div>  
+            <div style="position:relative;width:580em;height:36em;margin: 40em auto 0em auto;padding:4em;background: #441c00;opacity:.8;border-radius: 10em;color:#fff;text-align: center">
+                <p style="font-size:11em;">Fonts don't scale 100% smoothly, so leave extra space in their container. Now resize your browser window!</p>
+            </div>
+        </div>
+        <div style="width:300em;margin:5em auto auto auto;background: #b9a496;padding:10em;border-radius: 10em">
+            <p style="font-size:20em">If your app needs to scroll, that's fine.  Responsivem will scale making the "frame" such as 640 by 480 fill the window.</p>
+            <p style="font-size:16px;color: #690392">For text that should not shrink but wrap as it's container shrinks, just specify in pixels as usual. (resize your window to be very small and look at this text)</p>
+            <p style="font-size: 10em">Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br>Lorem ipsum Latin stuff to fill space<br></p>
+        </div>
+    </body>
+</html>
