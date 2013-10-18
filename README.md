@@ -17,7 +17,7 @@ Now if you size your main div to 1600em by 900em, then your main div will stretc
 
 DEMO
 ======
-[check this demo to see a simple example](http://rawgithub.com/AwokeKnowing/responsivem/master/responsivemdemo.html)
+[Click here to see a simple demo example](http://rawgithub.com/AwokeKnowing/responsivem/master/responsivemdemo.html)
 
 Special Instructions
 ====================
