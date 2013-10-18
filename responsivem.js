@@ -1,5 +1,5 @@
 //include after jquery, and you need <!doctype html>, and use em for everything (including fonts) instead of px
-var rtime=new Date()-1000,resizetimeout=false,resizedelta=60,resizeemx=100,resizeemy=100;
+var rtime=new Date()-1000,resizetimeout=false,resizedelta=200,resizeemx=100,resizeemy=100;
 
 $(window).resize(function(){
   rtime=new Date();
@@ -19,5 +19,5 @@ function resizeend(){
 
 //override default minimum width and height in em. If your app is 16:9 you might use responsivem(160,90); and your main div should be 160em by 90em
 function responsivem(xem,yem){
-  resizeemx=xem;resizeemy=yem;$(window).resize();
+  resizeemx=xem;resizeemy=yem;$(window).resize().resize();
 }
