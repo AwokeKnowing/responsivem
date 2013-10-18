@@ -12,6 +12,7 @@ function resizeend(){
     setTimeout(resizeend,resizedelta);
   else{
     resizetimeout = false;
+	$('body').css('font-size','0em');//get rid of scrollbars for calculation
     var wx=$(window).width(),wy=$(window).height();
     $('body').css('font-size',wx/wy>=resizeemx/resizeemy?wy/resizeemy:wx/resizeemx);
   }
@@ -19,6 +20,5 @@ function resizeend(){
 
 //override default minimum width and height in em. If your app is 16:9 you might use responsivem(160,90); and your main div should be 160em by 90em
 function responsivem(xem,yem){
-$('body').css('font-size','0em');
   resizeemx=xem;resizeemy=yem;$(window).resize();
 }
