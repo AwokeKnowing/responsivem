@@ -19,5 +19,6 @@ function resizeend(){
 
 //override default minimum width and height in em. If your app is 16:9 you might use responsivem(160,90); and your main div should be 160em by 90em
 function responsivem(xem,yem){
-  resizeemx=xem;resizeemy=yem;$(window).resize().resize();
+  resizeemx=xem;resizeemy=yem;$(window).resize();
+  setTimeout(function(){$(window).resize();},300);
 }
