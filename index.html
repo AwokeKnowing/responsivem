@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Responsivem by AwokeKnowing</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Responsivem</h1>
+        <h2>Scale smoothly with screen size, keeping proportions. Virtual Pixels</h2>
+        <a href="https://github.com/AwokeKnowing/responsivem" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="responsivem" class="anchor" href="#responsivem"><span class="octicon octicon-link"></span></a>responsivem</h1>
+
+<p>Scale smoothly with screen size, keeping proportions! Tired of choosing 960px width or some other arbitrary website size? want to see you nice web app scale smoothly with the window resize?  Just drop responsivem.js into your project and include it after jquery.</p>
+
+<h1>
+<a name="what-it-does" class="anchor" href="#what-it-does"><span class="octicon octicon-link"></span></a>What it does</h1>
+
+<p>Even CSS3 is weak on rescaling while maintaining proportions.  This script will set up an "on window resize" event which will scale the meaning of "em" on your page.  By default, it's set to 100em by 100em.  So if you add an element to your html body, say a div, and set it to 100em width and 100em height, then it will automatically scale to be the full size of the screen, while maintaining it's proportion.</p>
+
+<p>Now if your app is 16:9 scale, you can modify the proportions.  You might want to use 1600em by 900em as your "full size", by just adding one line of code:</p>
+
+<div class="highlight highlight-js"><pre>    <span class="nx">responsivem</span><span class="p">(</span><span class="mi">1600</span><span class="p">,</span><span class="mi">900</span><span class="p">);</span>
+</pre></div>
+
+<p>Congratulations, you now have "virtual pixels"!  </p>
+
+<p>Now if you size your main div to 1600em by 900em, then your main div will stretch to fill the browser window, while keeping the 16:9 proportion.  If you want a div inside of that that takes up 1/4 of the area in the upper left of your 16:9 main div, just add it in and make it's size 800em by 450em.  For fonts, it's the same.  A font sized 160em would be 10% as tall as your 16:9 main div, no matter what the window size.</p>
+
+<h1>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>DEMO</h1>
+
+<p><a href="http://rawgithub.com/AwokeKnowing/responsivem/master/responsivemdemo.html">Click here to see a simple demo example</a></p>
+
+<h1>
+<a name="special-instructions" class="anchor" href="#special-instructions"><span class="octicon octicon-link"></span></a>Special Instructions</h1>
+
+<p>Responsivem modifies the font-size of the html body.  But then how do you set the font-size for text? Well, just make sure it's in it's own tag.  So you wouldn't have div with just text in it, and set a width and height and font-size on  a div, because the width and height would be relative to that font-size.  Instead, set the width and height on the div, and wrap the text inside in a tag an set the font size on that (and don't set a width/height).</p>
+
+<p>Also note that browswers usually don't render font's at exactly the em you specify.  If the font size comes out to 12.2 point, the browser might choose 12 or 12.5.  For this reason, you should leave some space to handle the font size slightly increasing in proportion to the container.</p>
+
+<h1>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h1>
+
+<p>This was originally for web apps that would be like flash apps or Windows 8 apps where you have a fixed layout but you want it to fill the screen.  It turns out it works great for just about any web page.  </p>
+
+<p>Email me james david morris a/t gmail * com (no spaces) to let me know if you've used this, or for suggestions.</p>
+
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/AwokeKnowing/responsivem/trend.png" alt="Bitdeli Badge"></a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/AwokeKnowing/responsivem/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/AwokeKnowing/responsivem/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/AwokeKnowing/responsivem"></a> is maintained by <a href="https://github.com/AwokeKnowing">AwokeKnowing</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
