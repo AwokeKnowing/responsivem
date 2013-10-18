@@ -4,7 +4,7 @@ Scale smoothly with screen size, keeping proportions! Tired of choosing 960px wi
 
 What it does
 ===========
-Even CSS3 is weak on rescaling while maintaining proportions.  This script will set up an "on window resize" event which will scale the meaning of "em" on your page.  By default, it's set to 100em by 100em.  So if you add an element to your html body, say a div, and set it to 100em width and 100em height, then it will automatically scale to be the full size of the screen, while maintaining it's proportion.
+It scales your app, or the "frame" you specify, to fill the browser window while maintaining proportions. Even CSS3 is weak on rescaling while maintaining proportions.  This script will set up an "on window resize" event which will scale the meaning of "em" on your page.  By default, it's set to 100em by 100em.  So if you add an element to your html body, say a div, and set it to 100em width and 100em height, then it will automatically scale to be the full size of the screen, while maintaining it's proportion.
 
 Now if your app is 16:9 scale, you can modify the proportions.  You might want to use 1600em by 900em as your "full size", by just adding one line of code:
 ```javascript
