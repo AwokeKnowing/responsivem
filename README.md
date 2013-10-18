@@ -17,7 +17,19 @@ Now if you size your main div to 1600em by 900em, then your main div will stretc
 
 DEMO
 ======
-check this demo to see a simple example (coming soon)
+[check this demo to see a simple example](https://rawgithub.com/AwokeKnowing/responsivem/master/responsivemdemo.html)
+
+Special Instructions
+====================
+Responsivem modifies the font-size of the html body.  But then how do you set the font-size for text? Well, just make sure it's in it's own tag.  So you wouldn't have div with just text in it, and set a width and height and font-size on  a div, because the width and height would be relative to that font-size.  Instead, set the width and height on the div, and wrap the text inside in a tag an set the font size on that (and don't set a width/height).
+
+Also note that browswers usually don't render font's at exactly the em you specify.  If the font size comes out to 12.2 point, the browser might choose 12 or 12.5.  For this reason, you should leave some space to handle the font size slightly increasing in proportion to the container.
+
+Why?
+=======
+This was originally for web apps that would be like flash apps or Windows 8 apps where you have a fixed layout but you want it to fill the screen.  It turns out it works great for just about any web page.  
+
+Email me james david morris a/t gmail * com (no spaces) to let me know if you've used this, or for suggestions.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AwokeKnowing/responsivem/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
