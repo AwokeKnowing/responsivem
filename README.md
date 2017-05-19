@@ -1,3 +1,6 @@
+## (edit: 2017)
+While this was awesome in 2013, nowadays it's best to use css3 tranform scaling for this type of thing, though the method described here will likely get crisper pixels
+
 responsivem
 ===========
 Scale smoothly with screen size, keeping proportions! Tired of choosing 960px width or some other arbitrary website size? want to see you nice web app scale smoothly with the window resize?  Just drop responsivem.js into your project and include it after jquery.
