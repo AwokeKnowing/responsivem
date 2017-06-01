@@ -5,12 +5,12 @@
         <script src="https://rawgithub.com/AwokeKnowing/responsivem/master/responsivem.js" ></script>
         <script>
             $(function(){
-                responsivem(640,480)
+                responsivem(1000,600)
                 $('#app-area').width('640em').height('480em');
                 $('#change').click(function(){
-                    responsivem(1000,600);
-                    $('#app-area').width('1000em').height('600em');
-                    $('#pixels').html("There are 1000 x 600 virtual pixels");
+                    responsivem(2000,1200);
+                    $('#app-area').width('2000em').height('1200em');
+                    $('#pixels').html("There are 2000 x 1200 virtual pixels");
                 });   
             });
             
