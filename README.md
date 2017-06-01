@@ -20,7 +20,7 @@ Now if you size your main div to 1600em by 900em, then your main div will stretc
 
 DEMO
 ======
-[Click here to see a simple demo example](http://rawgithub.com/AwokeKnowing/responsivem/master/responsivemdemo.html)
+[Click here to see a simple demo example](https://rawgithub.com/AwokeKnowing/responsivem/master/responsivemdemo.html)
 
 Special Instructions
 ====================
@@ -33,6 +33,4 @@ Why?
 This was originally for web apps that would be like flash apps or Windows 8 apps where you have a fixed layout but you want it to fill the screen.  It turns out it works great for just about any web page.  
 
 Email me james david morris a/t gmail * com (no spaces) to let me know if you've used this, or for suggestions.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AwokeKnowing/responsivem/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
